@@ -1,0 +1,27 @@
+[project]
+name = "cinepass-api"
+version = "0.1.0"
+description = "The CineReserve API is a high-performance, scalable RESTful backend designed to manage the complexities of modern cinema operations. Built with a focus on data integrity and concurrency control, the system provides a comprehensive portal for movie enthusiasts to discover films, view real-time seat availability, and secure tickets through a robust reservation flow."
+authors = [
+    {name = "Bruno Dias",email = "brunoipb1@gmail.com"}
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django (>=6.1.1,<7.0.0)",
+    "djangorestframework (>=3.18.1,<4.0.0)",
+    "djangorestframework-simplejwt (>=5.5.1,<6.0.0)",
+    "psycopg2-binary (>=2.9.13,<3.0.0)",
+    "django-redis (>=7.0.0,<8.0.0)",
+    "drf-spectacular (>=0.30.0,<0.31.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)",
+    "pytest-django (>=4.14.0,<5.0.0)"
+]
